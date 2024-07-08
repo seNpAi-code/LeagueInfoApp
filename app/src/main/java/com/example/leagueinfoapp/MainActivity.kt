@@ -1,9 +1,7 @@
 package com.example.leagueinfoapp
 
-import AppDatabase
-import DbProvider
-import LeagueDao
-import MainScreen
+
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent

@@ -1,3 +1,4 @@
+package com.example.leagueinfoapp
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 

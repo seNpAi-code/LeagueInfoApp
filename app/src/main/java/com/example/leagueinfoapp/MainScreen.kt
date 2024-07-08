@@ -1,3 +1,6 @@
+package com.example.leagueinfoapp
+import JerseyViewModel
+import SearchJerseysScreen
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
