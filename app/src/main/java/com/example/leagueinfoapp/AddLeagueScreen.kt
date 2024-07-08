@@ -15,11 +15,12 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.media3.database.DatabaseProvider
 import androidx.navigation.NavController
+import androidx.room.Room
 
 @Composable
 fun AddLeaguesScreen(navController: NavController, leagueViewModel: LeagueViewModel = viewModel()) {
     val context = LocalContext.current
-    val db = DbProvider.getDatabase(context)
+    val db = Room.databaseBuilder(context, AppDatabase::class.java, "football.db").build()
     val leagues = listOf(
         League("4328", "English Premier League", "Soccer", "Premier League, EPL"),
         League("4329", "English League Championship", "Soccer", "Championship")
